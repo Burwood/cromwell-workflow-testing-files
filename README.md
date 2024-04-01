@@ -16,7 +16,7 @@ The purpose of these tests is to evaluate and compare the performance of Cromwel
 ## Jar files
 
 You will need to create two jar files:
-1. The first will be created from the develop branch
+1. The first will be created from the develop branch: https://github.com/broadinstitute/cromwell
 2. The second from the following commit: https://github.com/broadinstitute/cromwell/tree/f6cdc3ad9187aa4eb49924350a67880a9480f398
 
 These first will be used to test PAPI, the second to test Batch
