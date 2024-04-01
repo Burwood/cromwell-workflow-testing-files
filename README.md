@@ -24,11 +24,11 @@ These first will be used to test PAPI, the second to test Batch
 ## Running Tests
 
 ### With Pipelines API (PAPI)
-1. Open a terminal window and run the following command:
-   java -server -Xms512m -Xmx128g -XX:NewSize=3g -XX:MaxNewSize=3g -XX:SurvivorRatio=8 -XX:+UseG1GC -XX:+CMSParallelRemarkEnabled -XX:+UseCMSInitiatingOccupancyOnly -XX:CMSInitiatingOccupancyFraction=60 -XX:+ScavengeBeforeFullGC -XX:+CMSScavengeBeforeRemark -verbose:gc -Dwebservice.port=8000 -Dconfig.file=papi.config -jar [PATH TO JAR FILE] server
+1. Open a terminal window and run the following command to start cromwell in server mode:
+   - java -server -Xms512m -Xmx128g -XX:NewSize=3g -XX:MaxNewSize=3g -XX:SurvivorRatio=8 -XX:+UseG1GC -XX:+CMSParallelRemarkEnabled -XX:+UseCMSInitiatingOccupancyOnly -XX:CMSInitiatingOccupancyFraction=60 -XX:+ScavengeBeforeFullGC -XX:+CMSScavengeBeforeRemark -verbose:gc -Dwebservice.port=8000 -Dconfig.file=papi.config -jar [PATH TO JAR FILE] server
 2. Open a new terminal and execute the bash script.
 
 ### With Batch
-1. Open a terminal window and run the following command:
-   java -server -Xms512m -Xmx128g -XX:NewSize=3g -XX:MaxNewSize=3g -XX:SurvivorRatio=8 -XX:+UseG1GC -XX:+CMSParallelRemarkEnabled -XX:+UseCMSInitiatingOccupancyOnly -XX:CMSInitiatingOccupancyFraction=60 -XX:+ScavengeBeforeFullGC -XX:+CMSScavengeBeforeRemark -verbose:gc -Dwebservice.port=8000 -Dconfig.file=batch.config -jar [PATH TO JAR FILE] server
+1. Open a terminal window and run the following command to start cromwell in server mode:
+   - java -server -Xms512m -Xmx128g -XX:NewSize=3g -XX:MaxNewSize=3g -XX:SurvivorRatio=8 -XX:+UseG1GC -XX:+CMSParallelRemarkEnabled -XX:+UseCMSInitiatingOccupancyOnly -XX:CMSInitiatingOccupancyFraction=60 -XX:+ScavengeBeforeFullGC -XX:+CMSScavengeBeforeRemark -verbose:gc -Dwebservice.port=8000 -Dconfig.file=batch.config -jar [PATH TO JAR FILE] server
 2. Open a new terminal and execute the bash script.
